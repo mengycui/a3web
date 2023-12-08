@@ -1,0 +1,144 @@
+<!--
+- Owner : Hannah Rivet
+- Date  : Dec 7
+- Description: Contact us page
+-->
+
+<!-- Doctype and Meta Tags -->
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <!-- the <head> element is a container for metadata -->
+    <title>Contact Us</title>
+    <!-- meta is information about the document, always go inside the <head> -->
+    <meta charset="UTF-8" />
+    <!-- defines the character encoding for the document, UTF-8/ASCII, w3schools -->
+    <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+    <!-- setting the viewpoint so it looks good on all devices, w3schools -->
+    <meta name="author" content="Hannah Rivet" />
+    <!-- defining the author of the page, me, w3schools -->
+    <!-- Created our own favicon on https://www.favicon.cc/ -->
+    <link rel="icon" type="image/x-icon" href="img/PPfavicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- linking my external css document to this html document, w3schools.com/html/html_css.asp -->
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico">  linking to favicon, the little image in the browser tab -->
+  </head>
+
+  <body>
+    <!-- Pawfect Partners Header & Motto -->
+    <header>
+      <div class="backgroundheader1">
+        <div class="header">
+          <h1>Pawfect Partners Consulting</h1>
+          <p class="titledescription">
+            Putting our best paw forward to accomplish your goals
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation bar text, https://www.youtube.com/watch?v=e5wjLZzMmYM for html -->
+    <div>
+      <nav class="navbar_container">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="services.html">Services</a></li>
+          <li class="nav-item">
+            <a href="pastprojects.html">Past Projects</a>
+          </li>
+          <li class="nav-item"><a href="meetmocha.html">Mocha</a></li>
+          <li class="nav-item"><a href="meetphoebe.html">Phoebe</a></li>
+          <li class="nav-item"><a href="meetrocky.html">Rocky</a></li>
+          <li class="nav-item"><a href="meetskyler.html">Skyler</a></li>
+          <li class="nav-item"><a href="meetsteeler.html">Steeler</a></li>
+          <li class="nav-item">
+            <a id="current" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+
+    <div class="PP2023">
+      <div class="contactheader">
+        <h2>Contact Us</h2>
+        <p>Thank you for your interest in Pawfect Partners Consulting.</p>
+        <p>
+          Have a project idea? Question? Want to report a technical problem?
+        </p>
+        <p>
+          Fill out the form below and one of our associates will reach out to
+          you within 3-5 buisness days.
+        </p>
+      </div>
+
+      <!-- Can't get this to work rn, will change so the containers adjust to screen size/desktop vs mobile -->
+      <div class="flex-contactus">
+        <div class="flex-item-left">
+          <h2>Send Us A Message</h2>
+        </div>
+
+        <!-- From https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+        <div class="contact-container">
+          <form>
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your first name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email.." />
+
+            <label for="country">Country/Region</label>
+            <select id="country" name="country">
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+              <option value="others">Other</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+
+            <p>
+              By submitting the contact form, you agree to your data being used
+              to process your request.
+            </p>
+            <!-- https://www.w3schools.com/js/js_popup.asp for alert button-->
+            <button onclick="contactFunction()" id="submit-button">
+              Submit
+            </button>
+
+            <script src="javascript.js"></script>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <p id="disclaimertext">©Pawfect Partners Consulting Group 2023</p>
+    </div>
+  </body>
+</html>
+
+<!--*** End Owner: Hannah Rivet *** -->

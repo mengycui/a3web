@@ -1,0 +1,204 @@
+<!-- 
+- Author: Mengyuan Cui (HOME) Chloe Nevin (Meet the Team)
+- Date  : Dec 7
+- Description: Skyler's about me page
+ -->
+<!-- Doctype and Meta Tags -->
+<!DOCTYPE html>
+<html lang="en"> <!-- declares the language of the webpage -->
+<head> <!-- the <head> element is a container for metadata -->
+	<title>Meet the Team</title>
+	<!-- meta is information about the document, always go inside the <head> -->
+	<meta charset="UTF-8"> <!-- defines the character encoding for the document, UTF-8/ASCII, w3schools -->
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<!-- setting the viewpoint so it looks good on all devices, w3schools -->
+	<meta name="author" content="Chloe N"> <!-- defining the author of the page, me, w3schools -->
+	<!-- Created our own favicon on https://www.favicon.cc/ -->
+    	<link rel="icon" type="image/x-icon" href="img/PPfavicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- linking external css document to this html document, w3schools.com/html/html_css.asp -->
+</head>
+
+<body>
+	<!-- the <body> element contains all the contents of an HTML document (headings, paragraphs, images, hyperlinks, tables, lists, etc.) -->
+
+	<!-- Top top header -->
+	<header>
+		<div class="backgroundheader1">
+			<div class="header">
+				<h1>Pawfect Partners Consulting</h1>
+				<p class="titledescription">Putting our best paw forward to accomplish your goals</p>
+			</div>
+		</div>
+	</header>
+
+
+<!-- Navigation bar text, https://www.youtube.com/watch?v=e5wjLZzMmYM for html -->
+    <div>
+      <nav class="navbar_container">
+        <ul class="nav-menu">
+          <li class="nav-item"><a id="current" href="index.html">Home</a></li>
+          <li class="nav-item"><a href="services.html">Services</a></li>
+          <li class="nav-item"> <a href="pastprojects.html">Past Projects</a></li>
+          <li class="nav-item"><a href="meetmocha.html">Mocha</a></li>
+          <li class="nav-item"><a href="meetphoebe.html">Phoebe</a></li>
+          <li class="nav-item"><a href="meetrocky.html">Rocky</a></li>
+          <li class="nav-item"><a href="meetskyler.html">Skyler</a></li>
+          <li class="nav-item"><a href="meetsteeler.html">Steeler</a></li>
+          <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+
+
+	<!-- "Page 1: Home"-->
+	<!-- Text under navigation bar -->
+	<div class="wrapper">
+		<div class="text-box">
+			<h2>Our Services and Why Choose Us</h2>
+			<p>
+				Choosing us means partnering with a team of experienced professionals who offer the best solutions that perfectly match your needs. 
+				Our deep understanding of GIS, coupled with our diverse experience in the industry and work with NGOs, enables us to deliver efficient and innovative results. Your satisfaction is our top priority. We ensure that your GIS projects exceed expectations.</p>
+		        <!--Flexbox for the list of services-->
+
+		<h2> Our Mission </h2>
+				<p>
+					Our mission at Pawfect Partners is to provide our clients with precise, innovative geospatial solutions. As a fast-growing GIS consulting group, we focus on delivering highest-quality GIS services that enhance decision-making and unlock new opportunities. We work our best to transform complex spatial data into actionable insights. 
+					Our commitment is to be a trusted partner, helping clients to navigate the dynamic world of geographic information to achieve their strategic objectives, ensuring every solution is a perfect fit for their unique needs.
+				</p>
+
+			<h2> Our Specialized Fields </h2>
+			<div class="specialfields">
+				<button class="field">Geology</button>
+				<button class="field">Hydrology</button>
+				<button class="field">Remote Sensing</button>
+				<button class="field">Forestry</button>
+				<button class="field">Map Design</button>
+			</div>
+				
+
+			<h2> Pawfect Partners Milestones</h2>
+			<div class="timeline">
+				<div class="container left">
+					<div class="content">
+						<h3>Aug 2023</h3>
+						<p>Pawfect Partners is named to the Pawbes Global, list of top 25 Fastest Growing Startups in
+							2023 </p>
+					</div>
+				</div>
+				<div class="timeline">
+					<div class="container right">
+						<div class="content">
+							<h3>Feb 2023</h3>
+							<p>Mocha and Phoebe joined the team. Partnered with Ministry of Transportation to analyze
+								Urban Transportation in Toronto</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="timeline">
+					<div class="container left">
+						<div class="content">
+							<h3>Dec 2022</h3>
+							<p>Best Paw Consulting Group Award in Canada. Partnered with McMaster University to map food
+								deserts in Toronto, Ontario</p>
+						</div>
+					</div>
+					<div class="timeline">
+						<div class="container right">
+							<div class="content">
+								<h3>July 2022</h3>
+								<p>Completed the first project analyzing deforestation in Alberta coorprating with
+									Alberta Ministry of Natural Resources</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="timeline">
+					<div class="container left">
+						<div class="content">
+							<h3>May 2022</h3>
+							<p>Steeler, Skyler and Rocky co-founded the company and named it Pawfect Partners Consulting
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- "Page 2: Meet the Team"-->
+	<div class="TeamMember">
+		<h2>Our Team at Pawfect Partners</h2>
+		<!-- https://www.w3schools.com/howto/howto_css_images_side_by_side.asp & https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_team for template help -->
+		<div class="row">
+			<div class="column">
+				<div class="TeamMember">
+					<img class=teamMembers src="img/steelerResized.png" alt="Steeler Bio Pic">
+					<h2>Steeler</h2> 
+					<h3>Hydrologist</h3>
+					<!-- <p><strong>Education:</strong> Masters of Environmental Studies from Pupland University</p> -->
+					<p><strong>Interests:</strong> All things water, natural hazards, and field work!</p>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="TeamMember">
+					<img class=teamMembers src="img/Mocha.png" alt="Mocha Bio Pic">
+					<h2>Mocha</h2>
+					<h3>Remote Sensing Specialist</h3>
+					<!-- <p><strong>Education:</strong> Masters of Science from the University of Pawronto</p> -->
+					<p><strong>Interests:</strong> Satellite imagery, image correction, cartography</p>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="TeamMember">
+					<img class=teamMembers src="img/Skyler.png" alt="Skyler Bio Pic">
+					<h2>Skyler</h2>
+					<h3>Human Geography Specialist</h3>
+					<!-- <p><strong>Education:</strong> Masters in Science from the Bones University</p> -->
+					<p><strong>Interests:</strong> Human behaviour, travelling, programming, and bones.</p>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="TeamMember">
+					<img class=teamMembers src="img/phoebeResized.png" alt="Phoebe Bio Pic">
+					<h2>Phoebe</h2>
+					<h3>Forester</h3>
+					<!-- <p><strong>Education:</strong> Masters in Science from the Pawston College of Advanced Fetchology</p> -->
+					<p><strong>Interests:</strong> Big sticks, small sticks, all sticks - I have no preference! </p>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="TeamMember">
+					<img class=teamMembers src="img/rocky.png" alt="Rocky Bio Pic">
+					<h2>Rocky</h2>
+					<h3>Professional Geologist</h3>
+					<!-- <p><strong>Education:</strong> PhD in Geology and Earth Sciences from Rockland School of GIS and Geology</p> -->
+					<p><strong>Interests:</strong> Rocks, rocks, and more rocks</p>
+				</div>
+			</div>
+		</div>
+<script src="javascript.js"></script>
+		<!-- Section disclaimer, https://www.geeksforgeeks.org/how-to-create-links-to-sections-within-the-same-page-in-html/ for html -->
+		<div class="disclaimer" id="disclaimer">
+			<p id="disclaimertext">©Pawfect Partners Consulting Group 2023</p>
+		</div>
+
+	</div>
+
+</body>
+<!-- End Owner: Mengyuan and Chloe -->
+
+</html>
